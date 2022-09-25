@@ -18,3 +18,7 @@ ncol(penguins)
 mean(pull(penguins, flipper_length_mm), na.rm = TRUE)
 ```
 In the penguins, there are 8 catagories, which are"species","island", "bill_length_mm",bill_depth_mm","flipper_length_mm","body_mass_g", "sex" and "year". There are 344 entries which mean 200.9152. 
+```{r}
+ggplot(data=penguins,aes(flipper_length_mm, bill_length_mm,color= species)) +
+  geom_point()
+```
