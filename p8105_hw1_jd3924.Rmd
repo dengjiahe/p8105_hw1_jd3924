@@ -55,5 +55,7 @@ my_char <- my_df$`vac_char <- ...`
 char <- as.numeric(my_char)
 ```
 After applying the "as.numeric()"， we can see that only logic and factor can convert to numeric, character still not able to. 
-For logical, since we divide out input into two categories, greater than or smaller than 0, so for input that greater than 0 has output TRUE counts are 1, and for input that smaller than 0 has output FALSE counts as 0. For factor, there are 3 different factor levels, which are welldone, good, and bad. So the computer can assign numbers 1 to 3 to bad, good and welldone accordingly. 
+For logical, since we divide out input into two categories, greater than or smaller than 0, so for input that greater than 0 has output TRUE counts are 1, and for input that smaller than 0 has output FALSE counts as 0.
+
+For factor, there are 3 different factor levels, which are welldone, good, and bad. So the computer can assign numbers 1 to 3 to bad, good and welldone accordingly. 
 However, characters are still not able to convert to numeric because they are random characters that we made. To assign a number to each of the characters is not meaningful.
