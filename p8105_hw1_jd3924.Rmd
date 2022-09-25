@@ -37,3 +37,11 @@ my_df <-
                            "good","welldone","good","bad"))
 )
 my_df
+mean(my_df$`my_sample <- rnorm(10)`)
+mean(my_df$`vac_logical <- my_sample > 0`)
+#only the vac_logical and my_sample are able to take the mean. 
+#For my_sample, just take the sum and divided by n=10,then can get mean
+#For vac_factor, any values that are greater than 0 counts as 1, and divided by n=10, then can get mean
+#For vac_char and vac_favtor, they are strings, which are not able to get the mean
+mean(pull(my_df,1))
+mean(pull(my_df,2))
