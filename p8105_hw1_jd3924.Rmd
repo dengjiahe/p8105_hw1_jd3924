@@ -22,3 +22,18 @@ In the penguins, there are 8 catagories, which are"species","island", "bill_leng
 ggplot(data=penguins,aes(flipper_length_mm, bill_length_mm,color= species)) +
   geom_point()
 ```
+```{r}
+ggsave(file = "flipper vs. bill.jpg")
+```
+
+Question 2
+```{r,echo=TRUE}
+my_df <- 
+  tibble(
+    my_sample <- rnorm(10),
+    vac_logical <- my_sample > 0,
+    vac_char <- c("a","b","c","d","e","f","g","h","i","j"),
+    var_factor <- factor(c("bad","bad","welldone","bad","good","welldone",
+                           "good","welldone","good","bad"))
+)
+my_df
