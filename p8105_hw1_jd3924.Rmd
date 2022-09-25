@@ -1,0 +1,13 @@
+---
+title: "p8105_hw1_jd3924.Rmd"
+author: "Jiahe Deng"
+date: "2022-09-24"
+output: html_document
+---
+Question 1
+```{r}
+install.packages("palmerpenguins")
+data("penguins", package = "palmerpenguins")
+library(tidyverse)
+penguins
+```
